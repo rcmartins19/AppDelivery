@@ -14,8 +14,8 @@
     --color-background: #fffdf7;
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
-    --color-primary: #ec6c2b;  /*#ffbf00*/
-    --color-primary-out: #ed9163; /*ffda6f*/
+    --color-primary: #eb976d;  /*#ffbf00*/
+    --color-primary-out: #ebad8e; /*ffda6f*/
     --color-secondary: #fff2cc;
     --color-black: #212121;
     --color-white: #ffffff;
@@ -36,6 +36,10 @@ html, body {
 
 b {
     font-family:'PoppinsMedium','Rubik', Courier, sans-serif, monospace;
+}
+
+i{
+    margin-right: 5px;
 }
 
 
@@ -111,4 +115,49 @@ b {
     text-decoration: none;
     font-size: 14px;
     color: var(--color-primary);
+}
+
+section.categoria {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--color-background);
+    width: 100%;
+    padding-top: 15px;
+
+}
+
+.container-menu {
+    margin-bottom: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+
+}
+
+.item-categoria{
+    flex: none;
+}
+
+.btn-white{
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.btn-white:hover, .btn-white:active {
+    background-color: var(--color-primary);
+}
+
+.btn-sm{
+    padding: 8px 13px;
+    border-radius: 15px;
+    font-size: 16px;
 }
